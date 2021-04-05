@@ -18,6 +18,12 @@ $router->get('/', function () use ($router) {
 });
 
 $router->group(['prefix' => 'api'], function() use ($router) {
-    // Endpoint: api/register
+    // POST: api/register
     $router->post('register', 'AuthController@register');
+
+    // POST: api/login
+    $router->post('login', 'AuthController@login');
+
+    // GET: api/users
+    $router->get('users', 'UserController@getAll');
 });
