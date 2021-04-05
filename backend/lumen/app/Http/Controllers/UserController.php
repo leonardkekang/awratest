@@ -20,7 +20,7 @@ class UserController extends Controller {
      * 
      * @return Response
      */
-    public function getAll() {
+    public function index() {
         return response()->json([
             'data' => User::all(),
         ], 200);

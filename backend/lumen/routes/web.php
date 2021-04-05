@@ -25,5 +25,14 @@ $router->group(['prefix' => 'api'], function() use ($router) {
     $router->post('login', 'AuthController@login');
 
     // GET: api/users
-    $router->get('users', 'UserController@getAll');
+    $router->get('users', 'UserController@index');
+
+    // GET: api/networks
+    $router->get('networks', 'NetworkController@index');
+
+    // POST: api/networks
+    $router->post('networks', 'NetworkController@store');
+
+    // POST: api/networks/$id
+    $router->post('networks/{id}', 'NetworkController@edit');
 });

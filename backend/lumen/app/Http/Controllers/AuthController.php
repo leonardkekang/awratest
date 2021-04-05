@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Log;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -62,6 +63,12 @@ class AuthController extends Controller {
                 'message' => 'Unauthorized',
             ], 401);
         }
+
+        $log = new Log;
+        $log->table = 'users';
+        $log->action = 'login';
+        $log->created_by = Auth::id();
+        $log->save();
 
         return $this->respondWithToken($token);
     }
