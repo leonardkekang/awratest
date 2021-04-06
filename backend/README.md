@@ -13,6 +13,9 @@ cd lumen
 # install dependencies
 composer install
 
+# migrate the database (don't forget to make and edit .env file from .env.example)
+php artisan migrate
+
 # serve
 php -S localhost:8000
 ```
