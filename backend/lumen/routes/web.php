@@ -35,4 +35,10 @@ $router->group(['prefix' => 'api'], function() use ($router) {
 
     // POST: api/networks/$id
     $router->post('networks/{id}', 'NetworkController@edit');
+
+    // GET: api/logs
+    $router->get('logs', 'LogController@index');
+
+    // GET: api/logs/$id
+    $router->get('logs/{id}', 'LogController@show');
 });
