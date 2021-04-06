@@ -100,3 +100,53 @@ api/networks
 | ip | String | IP Address |
 | label | String | IP's Label |
 | last_log | Integer | Last Log ID |
+
+### GET
+``` bash
+api/logs
+```
+
+*List Logs records*
+
+### Header Parameters
+| Key | Value |
+|-----|-------|
+| Authorization | Bearer [TOKEN] |
+
+### Returned Values
+| Field | Type | Name |
+|------|------|-------|
+| id | Integer | Record's ID |
+| table | String | Affected table/module |
+| action | Enum | login/store/edit/delete |
+| old_value | String | Value before / Initial value |
+| new_value | String | Value after |
+| created_by | Integer | User's ID |
+| updated_by | Integer | User's ID |
+| created_at | Timestamp | Record Created on |
+| updated_at | Timestamp | Recored Updated on |
+
+### GET
+``` bash
+api/logs/$id
+```
+
+*Get invidual Logs records*
+
+### Header Parameters
+| Key | Value |
+|-----|-------|
+| Authorization | Bearer [TOKEN] |
+
+### Returned Values
+| Field | Type | Name |
+|------|------|-------|
+| id | Integer | Record's ID |
+| table | String | Affected table/module |
+| action | Enum | login/store/edit/delete |
+| old_value | String | Value before / Initial value |
+| new_value | String | Value after |
+| created_by | Integer | User's ID |
+| updated_by | Integer | User's ID |
+| created_at | Timestamp | Record Created on |
+| updated_at | Timestamp | Recored Updated on |
