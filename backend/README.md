@@ -29,7 +29,7 @@ php -S localhost:8000
 api/register
 ```
 
-*Register new user*
+*Register new user*. Live URL : http://sandboxapi.my.id/api/register
 
 ### Header Parameters
 | Key | Value |
@@ -50,7 +50,7 @@ api/register
 api/login
 ```
 
-*User login*
+*User login*. Live URL : http://sandboxapi.my.id/api/login
 
 ### Header Parameters
 | Key | Value |
@@ -70,7 +70,7 @@ api/login
 api/networks
 ```
 
-*Add new IP record*
+*Add new IP record*. Live URL : http://sandboxapi.my.id/api/networks
 
 ### Header Parameters
 | Key | Value |
@@ -91,7 +91,7 @@ api/networks
 api/networks
 ```
 
-*List IP records*
+*List IP records*. Live URL : http://sandboxapi.my.id/api/networks
 
 ### Header Parameters
 | Key | Value |
@@ -111,7 +111,7 @@ api/networks
 api/logs
 ```
 
-*List Logs records*
+*List Logs records*. Live URL : http://sandboxapi.my.id/api/logs
 
 ### Header Parameters
 | Key | Value |
@@ -136,7 +136,7 @@ api/logs
 api/logs/$id
 ```
 
-*Get invidual Logs records*
+*Get invidual Logs records*. Live URL : http://sandboxapi.my.id/api/logs/$id
 
 ### Header Parameters
 | Key | Value |
