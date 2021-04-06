@@ -1,5 +1,7 @@
 # AWRA Coding Test
 
+You can check the uploaded API on http://sandboxapi.my.id/
+
 ## The Stacks
 | Database Engine | PHP Framework | Token Authentication |
 |-----------------|---------------|----------------------|
