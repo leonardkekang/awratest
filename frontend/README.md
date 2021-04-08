@@ -1,6 +1,4 @@
-# Vuex Authentication
-
-> A simple example of authentication and access control in a [Vue](https://vuejs.org/) app with [Vuex](https://vuex.vuejs.org/).
+# AWRA Coding Test
 
 ## Build Setup
 
@@ -14,9 +12,6 @@ npm run serve
 # build for production with minification
 npm run build
 ```
-
-## Server Setup
-To understand how to set up an authentication server, you can read [this article](https://scotch.io/tutorials/vue-authentication-and-route-handling-using-vue-router)
 
 ## Built with
 - [Vue](https://vuejs.org/) - A progressive JavaScript framework
