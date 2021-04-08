@@ -22,4 +22,8 @@ class Log extends Model
     public function updatedBy() {
         $this->belongsTo(User::class, 'updated_by');
     }
+
+    public function network() {
+        return $this->hasOne(Network::class, 'last_log');
+    }
 }

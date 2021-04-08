@@ -24,7 +24,7 @@ class NetworkController extends Controller {
      */
     public function index() {
         return response()->json([
-            'data' => Network::all(),
+            'data' => Network::with('lastLog')->get(),
         ], 200);
     }
 

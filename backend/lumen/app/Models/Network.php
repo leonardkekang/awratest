@@ -22,7 +22,7 @@ class Network extends Model
         'ip', 'label', 'last_log',
     ];
 
-    public function logs() {
-        return $this->hasMany(Log::class);
+    public function lastLog() {
+        return $this->belongsTo(Log::class, 'last_log');
     }
 }
