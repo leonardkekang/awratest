@@ -25,4 +25,16 @@ class UserController extends Controller {
             'data' => User::all(),
         ], 200);
     }
+
+    /**
+     * Get individual data
+     * 
+     * @param Integer $id
+     * @return Response
+     */
+    public function show($id) {
+        return response()->json([
+            'data' => User::findOrFail($id),
+        ], 200);
+    }
 }

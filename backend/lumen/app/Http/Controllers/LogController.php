@@ -21,7 +21,7 @@ class LogController extends Controller {
      */
     public function index() {
         return response()->json([
-            'data' => Log::all(),
+            'data' => Log::with('createdBy')->with('updatedBy')->get(),
         ], 200);
     }
 

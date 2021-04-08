@@ -27,6 +27,9 @@ $router->group(['prefix' => 'api'], function() use ($router) {
     // GET: api/users
     $router->get('users', 'UserController@index');
 
+    // GET: api/users/$id
+    $router->get('users/{id}', 'UserController@show');
+
     // GET: api/networks
     $router->get('networks', 'NetworkController@index');
 
